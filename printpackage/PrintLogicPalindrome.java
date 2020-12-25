@@ -16,15 +16,16 @@ public class PrintLogicPalindrome
 		{
 			arr[i]= s.charAt(i);
 		}
+		int last = s.length()-1;
 		mid= s.length()/2;
-		for (j=1;j<=mid ;j++ ) 
+		for (j=0;j<=mid ;j++ ) 
 		{
-			if ((arr[mid-j]) == (arr[mid+j]))
+			if ((arr[j]) == (arr[last-j])) 
 			{
-					count++;
-			}	
+				count++;	
+			}
 		}
-		if (count == mid) 
+		if (count == (mid+1)) 
 		{
 			System.out.println("this is a palindrome");
 		}
@@ -32,6 +33,5 @@ public class PrintLogicPalindrome
 		{
 			System.out.print("not a palindrome");
 		}
-
 	}
 }
