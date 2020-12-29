@@ -6,7 +6,7 @@ public class Main
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("enter 1 for palindrome check , 2 for fibonacci series");
+		System.out.println("enter 1 for palindrome check , 2 for fibonacci series , 3 for armstrong");
 		int o = sc.nextInt();
 		switch(o)
 		{
@@ -19,6 +19,12 @@ public class Main
 			case 2:
 					printpackage.PrintLogicFibonacci PrintLogicFibonacciInstance = new printpackage.PrintLogicFibonacci();
 					PrintLogicFibonacciInstance.printFibonacciSeries();
+					break;
+
+
+			case 3:
+					printpackage.PrintLogicArmstrong PrintLogicArmstrongInstance = new printpackage.PrintLogicArmstrong();
+					PrintLogicArmstrongInstance.printArmstrongLogic();
 					break;
 
 
